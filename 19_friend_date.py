@@ -16,3 +16,15 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+    result = set(a[2]) & set(b[2])
+    if result:
+        return True
+    else:
+        return False
+
+    # for hobby in a:
+    #     if hobby in *b:
+    #         return True
+    # return False
+
+   
