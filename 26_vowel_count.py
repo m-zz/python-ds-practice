@@ -13,9 +13,7 @@ def vowel_count(phrase):
     phrase_vowels = [ltr.lower() for ltr in list(phrase) if ltr in vowels]
 
     for vowel in phrase_vowels:
-        if dict.get(vowel):
-            dict[vowel] += 1
-        else:
-            dict[vowel] = 1
+        count = dict.get(vowel, 0) + 1
+        dict[vowel] = count
 
     return dict
